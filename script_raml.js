@@ -1,6 +1,6 @@
 const path = require("path");
 const fs = require("fs");
-const raml2html = require("~/usr/local/lib/node_modules/raml2html");
+const raml2html = require("/usr/local/lib/node_modules/raml2html");
 
 const configWithDefaultTheme = raml2html.getConfigForTheme();
 

@@ -4,11 +4,11 @@ const raml2html = require("/usr/local/lib/node_modules/raml2html");
 
 const configWithDefaultTheme = raml2html.getConfigForTheme();
 
-const ramlFile = path.join(__dirname, "helloworld.raml");
+const ramlFile = path.join(process.env.REPO_RAML, process.env.FILENAME_RAML);
 
 raml2html.render(ramlFile, configWithDefaultTheme).then(
   (result) => {
-    fs.appendFile("helloworld.html", result, function (err) {
+    fs.appendFile(process.env.FILENAME_HTML, result, function (err) {
       if (err) {
         console.log("Error al generar archivo HTML");
       } else {

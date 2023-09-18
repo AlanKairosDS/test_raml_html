@@ -1,6 +1,6 @@
 const path = require("path");
 const fs = require("fs");
-const raml2html = require("C:/Users/LENOVO/AppData/Roaming/npm/node_modules/raml2html");
+const raml2html = require("raml2html");
 
 const configWithDefaultTheme = raml2html.getConfigForTheme();
 

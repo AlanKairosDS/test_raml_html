@@ -4,7 +4,7 @@ echo "EJECUTAR VALIDACION DE ARCHIVO RAML"
 
 node script_raml.js
 
-if [ -f helloworld.html ]
+if [ -f $FILENAME_HTML ]
     then
         echo "El archivo existe"
     else

@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ -f $FILENAME_HTML ]
+if [ -f ~^.+\.html$ ]
     then
         echo "El archivo existe"
     else

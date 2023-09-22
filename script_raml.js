@@ -18,5 +18,12 @@ raml2html.render(ramlFile, configWithDefaultTheme).then(
   },
   (error) => {
     console.log(error);
+    fs.appendFile(process.env.FILENAME_ERROR, error, function (err) {
+      if (err) {
+        console.log("Error al generar archivo TXT");
+      } else {
+        console.log("Se creo archivo TXT con exito");
+      }
+    });
   }
 );
